@@ -1,0 +1,132 @@
+.testimonials {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 15px;
+    transform: translateY(-50%);
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212ea0;
+}
+
+.back-btn {
+    right: auto;
+    left: 0;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 200%; /* Adjusted width to accommodate all slides */
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 50%; /* Adjusted width for each li */
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.slide img {
+    width: 65px;
+    border-radius: 50%;
+    border: 4px solid #212ea0;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    color: #212ea0;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1200px) {
+    .testimonials {
+        padding: 0 40px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .testimonials {
+        padding: 0 40px; /* Adjust padding for narrower screens */
+    }
+
+    .next-btn,
+    .back-btn{
+        padding: 10px;
+        width: 35px;
+    }
+
+    .testimonials ul li{
+        padding: 10px;
+    }
+
+    .slide{
+        padding: 10px;
+    }
+    .slide img{
+        width: 50px;
+        border: 3px solid #212ea0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .user-info h3 {
+        font-size: 16px;
+    }
+
+    .slider p {
+        font-size: 12px;
+    }
+
+    .slider ul {
+        width: 600%; /* Adjusted width for smaller screens */
+    }
+
+    .slider ul li {
+        width: 50%; /* Adjusted width for smaller screens */
+    }
+
+    .slide {
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .slide img {
+        width: 40px; /* Adjusted image size for smaller screens */
+    }
+}
